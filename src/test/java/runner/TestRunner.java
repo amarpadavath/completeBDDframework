@@ -12,9 +12,9 @@ import org.testng.annotations.Listeners;
         plugin = {"pretty", "html:target/cucumber-report.html",
         		 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
-        dryRun=true,
+        dryRun=false,
         
-        tags = "@smoke"
+        tags = "@chrome or  @edge"
 )
 
 
