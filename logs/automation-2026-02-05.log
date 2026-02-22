@@ -1,0 +1,11 @@
+2026-02-05 15:59:33 INFO  hooks.Hooks - Starting scenario: Valid login with correct credentials on browser: edge
+2026-02-05 15:59:33 INFO  factory.DriverFactory - Launching browser: edge
+2026-02-05 15:59:37 INFO  hooks.Hooks - Starting scenario: Invalid login on browser: chrome
+2026-02-05 15:59:37 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-05 15:59:45 INFO  factory.DriverFactory - Browser closed
+2026-02-05 16:06:57 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
+2026-02-05 16:06:57 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-05 16:07:07 INFO  factory.DriverFactory - Browser closed
+2026-02-05 16:07:30 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
+2026-02-05 16:07:30 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-05 16:07:41 INFO  factory.DriverFactory - Browser closed
