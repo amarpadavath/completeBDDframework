@@ -1,0 +1,18 @@
+2026-02-10 15:55:40 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes on browser: chrome
+2026-02-10 15:55:40 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-10 15:55:44 INFO  factory.DriverFactory - Browser closed
+2026-02-10 16:57:44 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes on browser: chrome
+2026-02-10 16:57:44 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-10 16:57:51 INFO  factory.DriverFactory - Browser closed
+2026-02-10 17:08:54 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes on browser: chrome
+2026-02-10 17:08:54 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-10 17:09:02 INFO  factory.DriverFactory - Browser closed
+2026-02-10 17:12:08 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes on browser: chrome
+2026-02-10 17:12:08 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-10 17:12:16 INFO  factory.DriverFactory - Browser closed
+2026-02-10 17:19:52 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes on browser: chrome
+2026-02-10 17:19:52 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-10 17:19:59 INFO  factory.DriverFactory - Browser closed
+2026-02-10 17:20:48 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
+2026-02-10 17:20:48 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-10 17:21:00 INFO  factory.DriverFactory - Browser closed

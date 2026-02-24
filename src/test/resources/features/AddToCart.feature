@@ -1,5 +1,5 @@
 Feature: Add product to cart and place order
-   @test123
+   @test123 @firefox
   Scenario: User adds Brocolli to cart and completes checkout
     Given user launches the GreenKart application
     When user searches for "Brocolli"

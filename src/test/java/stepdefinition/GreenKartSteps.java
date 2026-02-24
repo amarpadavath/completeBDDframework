@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
 
+import factory.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -18,14 +19,14 @@ public class GreenKartSteps {
     GreenKartPage greenKartPage;
     SoftAssert softAssert = new SoftAssert();
 
-    @Before
-    public void setUp() {
-        driver = new ChromeDriver();
-        greenKartPage = new GreenKartPage(driver);
-    }
+  
 
     @Given("user launches the GreenKart application")
     public void user_launches_application() {
+    	 driver = DriverFactory.getDriver();   // ✅ fetch after Hooks init
+        // greenKartPage = new GreenKartPage(driver);
+    	greenKartPage = new GreenKartPage(driver);
+    	System.out.println(greenKartPage);
         greenKartPage.launchApp();
     }
 
@@ -65,9 +66,6 @@ public class GreenKartSteps {
         softAssert.assertAll();
     }
 
-    @After
-    public void tearDown() {
-        driver.quit();
-    }
+  
 }
 

@@ -14,7 +14,7 @@ import org.testng.annotations.Listeners;
         monochrome = true,
         dryRun=false,
         
-        tags = "@test123"
+        tags = "@test123 and @edge"
 )
 
 
