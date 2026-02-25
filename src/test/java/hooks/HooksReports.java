@@ -1,26 +1,40 @@
 package hooks;
 
-import com.aventstack.extentreports.*;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+import com.openhtmltopdf.util.LoggerUtil;
+
 import factory.DriverFactory;
-import utils.ExtentManager;
-import utils.ScreenshotUtil;
+
+
+import java.util.Collection;
 
 public class HooksReports {
+	
 
-    private static ExtentReports extent = ExtentManager.getInstance();
-    private static ThreadLocal<ExtentTest> testThread = new ThreadLocal<>();
 
     @Before("@test123")
     public void setup(Scenario scenario) {
 
-        synchronized (Hooks.class) {
-            ExtentTest test = extent.createTest(scenario.getName());
-            testThread.set(test);
+        String browser = "chrome";
+
+        Collection<String> tags = scenario.getSourceTagNames();
+
+        if (tags.contains("@firefox")) {
+            browser = "firefox";
+        } else if (tags.contains("@edge")) {
+            browser = "edge";
         }
+
+        DriverFactory.initDriver(browser);
     }
 
     @After("@test123")
@@ -28,24 +42,42 @@ public class HooksReports {
 
         WebDriver driver = DriverFactory.getDriver();
 
-        if (testThread.get() != null) {
+      /*  if (scenario.isFailed()) {
 
-            String screenshot = ScreenshotUtil.captureScreenshot(driver);
+            byte[] screenshot = ((TakesScreenshot) driver)
+                    .getScreenshotAs(OutputType.BYTES);
 
-            if (scenario.isFailed()) {
-                testThread.get().fail("Test Failed")
-                        .addScreenCaptureFromBase64String(screenshot);
-            } else {
-                testThread.get().pass("Test Passed")
-                        .addScreenCaptureFromBase64String(screenshot);
-            }
+            scenario.attach(screenshot, "image/png", "Failure Screenshot");
+        }
+        
+        else
+        {
+        	
+        	  byte[] screenshot = ((TakesScreenshot) driver)
+                      .getScreenshotAs(OutputType.BYTES);
+
+              scenario.attach(screenshot, "image/png", "Success Screenshot");
+        	
+        }*/
+        
+        if (driver != null) {
+
+            byte[] screenshot = ((TakesScreenshot) driver)
+                    .getScreenshotAs(OutputType.BYTES);
+
+            scenario.attach(
+                    screenshot,
+                    "image/png",
+                    scenario.getName()
+            );
+            
+            String base64 = ((TakesScreenshot) driver)
+                    .getScreenshotAs(OutputType.BASE64);
+
+           
         }
 
-        driver.quit();
-        testThread.remove();
-    }
-
-    public static void flushReport() {
-        extent.flush();
+        DriverFactory.quitDriver();
+       
     }
 }

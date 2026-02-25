@@ -8,17 +8,15 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
-        glue = {"stepdefinition", "hooks"},
-        plugin = {
-                "pretty",
-                "html:target/cucumber-report.html",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-        },
+		
+		        features = "@target/failed_scenarios.txt",
+		        glue = {"stepdefinition", "hooks"},
+		        plugin = {"pretty"},
+		
         monochrome = true,
         tags = "@test123"
 )
-public class TestRunner1 extends AbstractTestNGCucumberTests {
+public class TestRunner2FailedScenarions2 extends AbstractTestNGCucumberTests {
 
     @Override
     @DataProvider(parallel = true)

@@ -1,4 +1,4 @@
-package hooks;
+/*package hooks;
 
 import factory.DriverFactory;
 import io.cucumber.java.After;
@@ -62,4 +62,4 @@ public class Hooks {
        
         DriverFactory.quitDriver();
     }
-}
+}*/

@@ -13,12 +13,12 @@ import org.testng.annotations.DataProvider;
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "tech.grasshopper.extentreports.cucumber.adapter.ExtentCucumberAdapter"
         },
         monochrome = true,
         tags = "@test123"
 )
-public class TestRunner1 extends AbstractTestNGCucumberTests {
+public class TestRunner2grasshoperadapter extends AbstractTestNGCucumberTests {
 
     @Override
     @DataProvider(parallel = true)
@@ -26,8 +26,5 @@ public class TestRunner1 extends AbstractTestNGCucumberTests {
         return super.scenarios();
     }
     
-    @AfterSuite
-    public void generatePdfReport() {
-        PdfReportGenerator.generatePdf();
-    }
+   
 }

@@ -1,140 +1,42 @@
-2026-02-24 12:16:34 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 12:16:34 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 12:16:53 INFO  factory.DriverFactory - Browser closed
-2026-02-24 12:24:19 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 12:24:19 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 12:24:22 INFO  factory.DriverFactory - Browser closed
-2026-02-24 12:27:37 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 12:27:37 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 12:27:40 INFO  factory.DriverFactory - Browser closed
-2026-02-24 12:31:16 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 12:31:16 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 12:31:19 INFO  factory.DriverFactory - Browser closed
-2026-02-24 12:51:26 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 12:51:26 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 12:51:34 INFO  factory.DriverFactory - Browser closed
-2026-02-24 12:54:41 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: edge
-2026-02-24 12:54:41 INFO  factory.DriverFactory - Launching browser: edge
-2026-02-24 13:11:01 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: edge
-2026-02-24 13:11:01 INFO  factory.DriverFactory - Launching browser: edge
-2026-02-24 13:11:24 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: edge
-2026-02-24 13:11:24 INFO  factory.DriverFactory - Launching browser: edge
-2026-02-24 13:12:03 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: edge
-2026-02-24 13:12:03 INFO  factory.DriverFactory - Launching browser: edge
-2026-02-24 13:12:36 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 13:12:36 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 13:12:44 INFO  factory.DriverFactory - Browser closed
-2026-02-24 13:13:01 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 13:13:01 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 13:13:28 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 13:13:28 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 13:13:36 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:22:28 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 14:22:28 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 14:22:47 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:22:47 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 14:22:47 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 14:22:53 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:22:53 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 14:22:53 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 14:22:58 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:28:40 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 14:28:40 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 14:28:50 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:28:50 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 14:28:50 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 14:28:56 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:28:56 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 14:28:56 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 14:29:03 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:30:18 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: edge
-2026-02-24 14:30:18 INFO  factory.DriverFactory - Launching browser: edge
-2026-02-24 14:31:18 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: firefox
-2026-02-24 14:31:18 INFO  factory.DriverFactory - Launching browser: firefox
-2026-02-24 14:31:39 INFO  factory.DriverFactory - Browser closed
-2026-02-24 14:37:36 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: edge
-2026-02-24 14:37:36 INFO  factory.DriverFactory - Launching browser: edge
-2026-02-24 21:08:20 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:08:20 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:08:30 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:08:30 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:08:30 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:08:36 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:08:36 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:08:36 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:08:41 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:13:04 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:13:04 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:13:04 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:13:04 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:13:04 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:13:04 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:13:16 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:13:16 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:13:18 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:23:30 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:23:30 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:23:30 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:23:30 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:23:30 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:23:30 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:30:27 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:30:27 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:30:27 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:30:27 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:30:27 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:30:27 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:33:47 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:33:47 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:33:47 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:33:47 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:33:47 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:33:47 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:34:32 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:34:32 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:34:32 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:34:32 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:34:32 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:34:32 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:38:15 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:38:15 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:38:25 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:38:25 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:38:32 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:38:32 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:42:58 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:42:58 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:43:08 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:43:08 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:43:08 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:43:13 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:43:13 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:43:13 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:43:18 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:51:46 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:51:46 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:51:55 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:51:55 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:51:55 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:52:01 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:52:01 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:52:01 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:52:07 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:54:01 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:54:01 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:54:12 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:54:12 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:54:12 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:54:17 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:54:17 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:54:17 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:54:22 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:56:31 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:56:31 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout on browser: chrome
-2026-02-24 21:56:31 INFO  hooks.Hooks - Starting scenario: User adds Brocolli to cart and completes checkout scenario outline on browser: chrome
-2026-02-24 21:56:31 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:56:31 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:56:31 INFO  factory.DriverFactory - Launching browser: chrome
-2026-02-24 21:56:41 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:56:41 INFO  factory.DriverFactory - Browser closed
-2026-02-24 21:56:43 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:07:31 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:07:31 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:07:31 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:07:44 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:07:44 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:07:48 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:23:22 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:23:22 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:23:22 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:23:35 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:23:35 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:23:37 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:42:57 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:42:57 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:42:57 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:43:08 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:43:08 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:43:12 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:45:10 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:45:10 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:45:10 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:45:20 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:45:21 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:45:25 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:48:54 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:48:54 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:48:54 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 07:49:07 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:49:08 INFO  factory.DriverFactory - Browser closed
+2026-02-25 07:49:11 INFO  factory.DriverFactory - Browser closed
+2026-02-25 08:01:09 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 08:01:09 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 08:01:09 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 08:01:18 INFO  factory.DriverFactory - Browser closed
+2026-02-25 08:01:18 INFO  factory.DriverFactory - Browser closed
+2026-02-25 08:01:20 INFO  factory.DriverFactory - Browser closed
+2026-02-25 08:15:31 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 08:15:40 INFO  factory.DriverFactory - Browser closed
+2026-02-25 08:15:40 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 08:15:46 INFO  factory.DriverFactory - Browser closed
+2026-02-25 08:15:46 INFO  factory.DriverFactory - Launching browser: chrome
+2026-02-25 08:15:52 INFO  factory.DriverFactory - Browser closed
