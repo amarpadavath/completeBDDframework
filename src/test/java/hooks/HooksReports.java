@@ -21,7 +21,7 @@ public class HooksReports {
 	
 
 
-    @Before("@test123")
+    @Before()
     public void setup(Scenario scenario) {
 
         String browser = "chrome";
@@ -37,7 +37,7 @@ public class HooksReports {
         DriverFactory.initDriver(browser);
     }
 
-    @After("@test123")
+    @After()
     public void tearDown(Scenario scenario) {
 
         WebDriver driver = DriverFactory.getDriver();

@@ -10,18 +10,17 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepdefinition", "hooks"},
-        plugin = {
-                "pretty",
-                "html:target/cucumber-report.html",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-        },
+        		plugin = {
+        			    "pretty",
+        			    "json:target/cucumber.json"
+        			},
         monochrome = true,
-        tags = "@data"
+        tags = "@test123"
 )
-public class TestRunner1 extends AbstractTestNGCucumberTests {
+public class TestRunner3 extends AbstractTestNGCucumberTests {
 
     @Override
-    @DataProvider(parallel = false)
+    @DataProvider(parallel = true)
     public Object[][] scenarios() {
         return super.scenarios();
     }

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.asserts.SoftAssert;
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
+
 import factory.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -28,6 +30,7 @@ public class GreenKartSteps {
     	greenKartPage = new GreenKartPage(driver);
     	System.out.println(greenKartPage);
         greenKartPage.launchApp();
+        ExtentCucumberAdapter.addTestStepLog("User entered username");
     }
 
     @When("user searches for {string}")
