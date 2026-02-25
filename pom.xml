@@ -5,6 +5,8 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+    
+
 
     <groupId>test</groupId>
     <artifactId>test</artifactId>
@@ -101,11 +103,13 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>3.2.5</version>
+
             <configuration>
-                <includes>
-                    <include>**/*Runner.java</include>
-                </includes>
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
             </configuration>
+
         </plugin>
     </plugins>
 </build>
