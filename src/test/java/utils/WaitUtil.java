@@ -47,5 +47,37 @@ public class WaitUtil {
 		
 		return fluentWait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
+	
+
+    // ===== USING WEBELEMENT =====
+
+    public WebElement visibilityOfElement(WebElement element) {
+        return wait.until(
+                ExpectedConditions.visibilityOf(element));
+    }
+
+    public WebElement elementToBeClickable(WebElement element) {
+        return wait.until(
+                ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public boolean invisibilityOfElement(WebElement element) {
+        return wait.until(
+                ExpectedConditions.invisibilityOf(element));
+    }
+    
+    ////////////////////////
+    
+    public void visibilityOfElement1(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    
+    public void visibilityOfElement3(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+    
+    public void click(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
 
 }

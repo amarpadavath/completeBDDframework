@@ -20,7 +20,7 @@ import java.util.Collection;
 public class HooksReports {
 	
 
-
+/*
     @Before()
     public void setup(Scenario scenario) {
 
@@ -42,7 +42,7 @@ public class HooksReports {
 
         WebDriver driver = DriverFactory.getDriver();
 
-      /*  if (scenario.isFailed()) {
+        if (scenario.isFailed()) {
 
             byte[] screenshot = ((TakesScreenshot) driver)
                     .getScreenshotAs(OutputType.BYTES);
@@ -58,7 +58,7 @@ public class HooksReports {
 
               scenario.attach(screenshot, "image/png", "Success Screenshot");
         	
-        }*/
+        }
         
         if (driver != null) {
 
@@ -80,4 +80,6 @@ public class HooksReports {
         DriverFactory.quitDriver();
        
     }
+    */
 }
+	

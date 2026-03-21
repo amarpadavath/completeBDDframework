@@ -10,4 +10,11 @@ public class ScreenshotUtil {
 
         return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
     }
+    
+    public static byte[] captureScreenshotBytes(WebDriver driver) {
+        return ((TakesScreenshot) driver)
+                .getScreenshotAs(OutputType.BYTES);
+    }
+    
+    
 }

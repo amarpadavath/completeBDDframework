@@ -31,6 +31,8 @@ public class GreenKartSteps {
     	System.out.println(greenKartPage);
         greenKartPage.launchApp();
         ExtentCucumberAdapter.addTestStepLog("User entered username");
+       
+        
     }
 
     @When("user searches for {string}")

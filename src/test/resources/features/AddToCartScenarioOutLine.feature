@@ -1,5 +1,5 @@
 Feature: Add product to cart and place order
-   @test123
+   @test1234
   Scenario Outline: User adds Brocolli to cart and completes checkout scenario outline
     Given user launches the GreenKart application
     When user searches for "<vegetable>"
