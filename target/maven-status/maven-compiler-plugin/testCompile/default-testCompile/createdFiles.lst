@@ -5,11 +5,17 @@ utils\ConfigReader.class
 hooks\HooksReports.class
 pages\GreenKartPage.class
 stepdefinition\LoginSteps.class
+stepdefinition\SearchStepDefinition.class
 runner\TestRunner1.class
 runner\TestRunner2grasshoperadapter.class
 utils\WaitUtil.class
 factory\DriverFactory.class
+runner\TestRunner3.class
+pages\DataTablePage.class
 runner\TestRunner2FailedScenarions2.class
+hooks\HooksReports2.class
+pages\HomePage.class
+stepdefinition\DataTableStepDefinition.class
 utils\PdfReportGenerator.class
 utils\RetryListener.class
 utils\ScreenshotUtil1.class
