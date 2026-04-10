@@ -21,7 +21,7 @@ public class HooksReports2 {
     public static ThreadLocal<ExtentTest> step = new ThreadLocal<>();
 
     // ✅ SCENARIO LEVEL
-    @Before("@test123")
+    @Before()
     public void setup(Scenario scenario) {
 
         String browser = "chrome";
@@ -43,7 +43,7 @@ public class HooksReports2 {
     }
 
     // ✅ STEP LEVEL (IMPORTANT – FIX FOR YOUR ERROR)
-    @BeforeStep("@test123")
+    @BeforeStep()
     public void beforeStep(Scenario scenario) {
 
         if (test.get() == null) {
@@ -57,7 +57,7 @@ public class HooksReports2 {
     }
 
     // ✅ STEP RESULT
-    @AfterStep("@test123")
+    @AfterStep()
     public void afterStep(Scenario scenario) {
 
         if (step.get() == null) {
@@ -73,7 +73,7 @@ public class HooksReports2 {
     }
 
     // ✅ SCENARIO RESULT
-    @After("@test123")
+    @After("")
   
     public void tearDown(Scenario scenario) {
 
@@ -105,6 +105,6 @@ public class HooksReports2 {
         }
 
         extent.flush();
-        DriverFactory.quitDriver();
+       // DriverFactory.quitDriver();
     }
 }

@@ -8,14 +8,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/EventHubCreateAccount.feature",
         glue = {"stepdefinition", "hooks"},
         		plugin = {
         			    "pretty",
         			    "json:target/cucumber.json"
         			},
-        monochrome = true,
-        tags = "@test123"
+        monochrome = true
+    // tags = "@chrome"
 )
 public class TestRunner3 extends AbstractTestNGCucumberTests {
 
