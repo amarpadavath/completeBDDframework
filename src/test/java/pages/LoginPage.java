@@ -2,6 +2,8 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+
+import exceptions.ElementNotFoundException;
 import factory.DriverFactory;
 
 public class LoginPage {
@@ -32,4 +34,13 @@ public class LoginPage {
                      .getText()
                      .contains("You logged into a secure area");
     }
+    
+    public void clickLogin() {
+        try {
+            driver.findElement(By.id("loginBtn")).click();
+        } catch (Exception e) {
+            throw new ElementNotFoundException("Login button not found on Login Page");
+        }
+    }
+
 }

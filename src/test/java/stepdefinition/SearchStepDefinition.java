@@ -32,4 +32,13 @@ public class SearchStepDefinition {
     public void verify_search_results() {
         homePage.verifyResults();
     }
+    /*
+    @Given("User enters data from excel")
+    public void user_enters_data() throws IOException {
+
+        String username = ExcelUtil.getCellData("testdata.xlsx", "Sheet1", 1, 0);
+        String password = ExcelUtil.getCellData("testdata.xlsx", "Sheet1", 1, 1);
+
+        loginPage.login(username, password);
+    }*/
 }
