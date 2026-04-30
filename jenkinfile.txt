@@ -3,7 +3,11 @@ pipeline {
 
     stages {
 
-        stage('Build2') {
+<<<<<<< HEAD
+         {
+=======
+        stage('Build') {
+>>>>>>> branch 'master' of https://github.com/amarpadavath/completeBDDframework.git
             steps {
                 echo "Build stage started..."
                 bat '''
