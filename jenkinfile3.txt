@@ -1,0 +1,52 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'TAGS', defaultValue: '@test123', description: 'Cucumber tag')
+    }
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo "Build started..."
+                bat 'mvn clean install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Running tests with tag: ${params.TAGS}"
+
+                bat """
+                mvn test -Dcucumber.filter.tags="${params.TAGS}"
+                """
+            }
+        }
+
+        stage('Report') {
+            steps {
+                echo "Report generated at test-output/ExtentReport.html"
+            }
+        }
+    }
+
+    post {
+        always {
+            echo "Sending email notification..."
+
+            emailext(
+                subject: "Jenkins Build: ${currentBuild.currentResult}",
+                body: """
+                <h3>Build Status: ${currentBuild.currentResult}</h3>
+                <p>Job Name: ${env.JOB_NAME}</p>
+                <p>Build Number: ${env.BUILD_NUMBER}</p>
+                <p>Check attached Extent Report.</p>
+                """,
+                to: "padavath68@gmail.com",
+                mimeType: 'text/html',
+                attachmentsPattern: 'test-output/ExtentReport.html'
+            )
+        }
+    }
+}
