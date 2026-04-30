@@ -1,11 +1,13 @@
-/*package hooks;
-
+package hooks;
+/*
 import io.cucumber.java.*;
+import utils.ConfigReader;
 import utils.ExtentManager;
 import utils.ScreenshotUtil;
 import factory.DriverFactory;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -13,7 +15,7 @@ import com.aventstack.extentreports.ExtentTest;
 import java.util.Base64;
 import java.util.Collection;
 
-public class HooksReports2 {
+public class HooksReports3 {
 
     private static ExtentReports extent = ExtentManager.getInstance();
 
@@ -21,17 +23,18 @@ public class HooksReports2 {
     public static ThreadLocal<ExtentTest> step = new ThreadLocal<>();
 
     // ✅ SCENARIO LEVEL
-    @Before()
+    @Before
     public void setup(Scenario scenario) {
 
-        String browser = "chrome";
+        // Priority: System property (Jenkins/Maven) > config file > default
+        String browser = System.getProperty("browser");
 
-        Collection<String> tags = scenario.getSourceTagNames();
+        if (browser == null || browser.isEmpty()) {
+            browser = ConfigReader.getProperty("browser");
+        }
 
-        if (tags.contains("@firefox")) {
-            browser = "firefox";
-        } else if (tags.contains("@edge")) {
-            browser = "edge";
+        if (browser == null || browser.isEmpty()) {
+            browser = "chrome"; // fallback
         }
 
         if (DriverFactory.getDriver() == null) {

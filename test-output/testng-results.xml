@@ -1,27 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
+<testng-results ignored="0" total="12" passed="5" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-30T08:15:39 IST" name="Default suite" finished-at="2026-04-30T08:16:24 IST" duration-ms="45311">
+  <suite started-at="2026-04-30T22:36:21 IST" name="CrossBrowserSuite" finished-at="2026-04-30T22:37:12 IST" duration-ms="51003">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@131ef10]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-30T08:15:39 IST" name="Default test" finished-at="2026-04-30T08:16:24 IST" duration-ms="45311">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@131ef10]" started-at="2026-04-30T08:15:39 IST" name="setUpClass" finished-at="2026-04-30T08:15:41 IST" duration-ms="1779" status="PASS">
+    <test started-at="2026-04-30T22:36:21 IST" name="Chrome" finished-at="2026-04-30T22:36:48 IST" duration-ms="26634">
+      <class name="runner.TestRunner4MulBrowser">
+        <test-method is-config="true" signature="setBrowser(org.testng.ITestContext)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:21 IST" name="setBrowser" finished-at="2026-04-30T22:36:21 IST" duration-ms="32" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6a902015]]>
+                <![CDATA[org.testng.TestRunner@7671cb68]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:21 IST" name="setUpClass" finished-at="2026-04-30T22:36:23 IST" duration-ms="1197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7671cb68]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@131ef10]" started-at="2026-04-30T08:15:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T08:15:52 IST" duration-ms="10912" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:37 IST" duration-ms="14055" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +50,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@131ef10]" started-at="2026-04-30T08:15:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T08:16:03 IST" duration-ms="11251" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:32 IST" duration-ms="9144" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=147.0.7727.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cd45db5350ecc45162477fd7b7528be, clickElement {id=f.F45068B65CEAAFBFE67A51F07206ED42.d.DEF1E8A8B5D4E77370E951A60CA6E40C.e.94}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, goog:processID: 7528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8cd45db5350ecc45162477fd7b7528be)] -> xpath: //input[@type='number']/following-sibling::*]
+Session ID: 8cd45db5350ecc45162477fd7b7528be]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=147.0.7727.117)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8cd45db5350ecc45162477fd7b7528be, clickElement {id=f.F45068B65CEAAFBFE67A51F07206ED42.d.DEF1E8A8B5D4E77370E951A60CA6E40C.e.94}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64822}, goog:processID: 7528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64822/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8cd45db5350ecc45162477fd7b7528be)] -> xpath: //input[@type='number']/following-sibling::*]
+Session ID: 8cd45db5350ecc45162477fd7b7528be
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
+at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
+at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:42 IST" duration-ms="10266" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -58,9 +131,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2f779af6487b4643c4a3a2d0d97a532, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57160}, goog:processID: 14876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57160/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2f779af6487b4643c4a3a2d0d97a532]]>
+Command: [2222323f0b121490a895a9106615a0b9, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61441}, goog:processID: 1152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61441/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2222323f0b121490a895a9106615a0b9]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//li//p[text()='Brocolli - 1 Kg'])[1]"}
@@ -69,9 +142,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2f779af6487b4643c4a3a2d0d97a532, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57160}, goog:processID: 14876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57160/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2f779af6487b4643c4a3a2d0d97a532
+Command: [2222323f0b121490a895a9106615a0b9, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61441}, goog:processID: 1152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61441/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2222323f0b121490a895a9106615a0b9
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,7 +170,7 @@ at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceD
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@131ef10]" started-at="2026-04-30T08:16:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T08:16:14 IST" duration-ms="10683" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:47 IST" duration-ms="10446" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,118 +183,616 @@ at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceD
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='number']/following-sibling::*"}
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2f779af6487b4643c4a3a2d0d97a532, findElement {using=xpath, value=//input[@type='number']/following-sibling::*}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57160}, goog:processID: 14876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57160/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2f779af6487b4643c4a3a2d0d97a532]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='number']/following-sibling::*"}
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2f779af6487b4643c4a3a2d0d97a532, findElement {using=xpath, value=//input[@type='number']/following-sibling::*}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57160}, goog:processID: 14876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57160/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2f779af6487b4643c4a3a2d0d97a532
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
-at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
-at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@131ef10]" started-at="2026-04-30T08:16:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T08:16:24 IST" duration-ms="10485" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Add product to cart and place order"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='number']/following-sibling::*"}
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2f779af6487b4643c4a3a2d0d97a532, findElement {using=xpath, value=//input[@type='number']/following-sibling::*}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57160}, goog:processID: 14876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57160/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2f779af6487b4643c4a3a2d0d97a532]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='number']/following-sibling::*"}
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a2f779af6487b4643c4a3a2d0d97a532, findElement {using=xpath, value=//input[@type='number']/following-sibling::*}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57160}, goog:processID: 14876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57160/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a2f779af6487b4643c4a3a2d0d97a532
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
-at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
-at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@131ef10]" started-at="2026-04-30T08:16:24 IST" name="tearDownClass" finished-at="2026-04-30T08:16:24 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner4MulBrowser@5e5d171f]" started-at="2026-04-30T22:36:47 IST" name="tearDownClass" finished-at="2026-04-30T22:36:48 IST" duration-ms="791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- runner.TestRunner4MulBrowser -->
+    </test> <!-- Chrome -->
+    <test started-at="2026-04-30T22:36:48 IST" name="Edge" finished-at="2026-04-30T22:36:51 IST" duration-ms="3276">
+      <class name="runner.TestRunner4MulBrowser">
+        <test-method is-config="true" signature="setBrowser(org.testng.ITestContext)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:48 IST" name="setBrowser" finished-at="2026-04-30T22:36:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6b8ca3c8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:48 IST" name="setUpClass" finished-at="2026-04-30T22:36:48 IST" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6b8ca3c8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:50 IST" duration-ms="2080" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1586)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1456)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1277)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1532)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1384)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1571)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:50 IST" duration-ms="2062" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1586)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1456)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1277)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1532)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1384)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1571)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:51 IST" duration-ms="1002" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1586)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1456)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1277)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1532)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1384)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1571)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:51 IST" duration-ms="925" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.github.bonigarcia.wdm.config.WebDriverManagerException">
+            <message>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.github.bonigarcia.wdm.config.WebDriverManagerException: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1435)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: msedgedriver.azureedge.net
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1586)
+at io.github.bonigarcia.wdm.managers.EdgeDriverManager.getDriverUrls(EdgeDriverManager.java:115)
+at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1456)
+at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1277)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1189)
+at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1451)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1432)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1425)
+at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1195)
+at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:427)
+at factory.DriverFactory.initDriver(DriverFactory.java:28)
+at hooks.HooksReports4.setup(HooksReports4.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.UnknownHostException: msedgedriver.azureedge.net
+at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1532)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1384)
+at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
+at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:447)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:162)
+at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:172)
+at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:142)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:152)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
+at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:162)
+at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:1571)
+... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.github.bonigarcia.wdm.config.WebDriverManagerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner4MulBrowser@e4487af]" started-at="2026-04-30T22:36:51 IST" name="tearDownClass" finished-at="2026-04-30T22:36:51 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner4MulBrowser -->
+    </test> <!-- Edge -->
+    <test started-at="2026-04-30T22:36:21 IST" name="Firefox" finished-at="2026-04-30T22:37:12 IST" duration-ms="51003">
+      <class name="runner.TestRunner4MulBrowser">
+        <test-method is-config="true" signature="setBrowser(org.testng.ITestContext)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:36:21 IST" name="setBrowser" finished-at="2026-04-30T22:36:21 IST" duration-ms="32" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@49dc7102]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:36:21 IST" name="setUpClass" finished-at="2026-04-30T22:36:23 IST" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@49dc7102]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:36:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:55 IST" duration-ms="32145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:36:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:36:54 IST" duration-ms="31231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:36:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:37:10 IST" duration-ms="15775" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: (//li//p[text()='Brocolli - 1 Kg'])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [37250c3c-01f3-4f77-a946-d8ffc14d93f1, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32744, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 37250c3c-01f3-4f77-a946-d8ffc14d93f1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: (//li//p[text()='Brocolli - 1 Kg'])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [37250c3c-01f3-4f77-a946-d8ffc14d93f1, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32744, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 37250c3c-01f3-4f77-a946-d8ffc14d93f1
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at pages.GreenKartPage.getProductText(GreenKartPage.java:55)
+at stepdefinition.GreenKartSteps.user_proceeds_to_checkout(GreenKartSteps.java:57)
+at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:36:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-30T22:37:12 IST" duration-ms="17480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User adds Brocolli to cart and completes checkout scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add product to cart and place order"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner4MulBrowser@757277dc]" started-at="2026-04-30T22:37:12 IST" name="tearDownClass" finished-at="2026-04-30T22:37:12 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner4MulBrowser -->
+    </test> <!-- Firefox -->
+  </suite> <!-- CrossBrowserSuite -->
 </testng-results>

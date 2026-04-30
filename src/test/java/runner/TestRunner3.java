@@ -14,8 +14,8 @@ import org.testng.annotations.DataProvider;
         			    "pretty",
         			    "json:target/cucumber.json"
         			},
-        monochrome = true
-    // tags = "@chrome"
+        monochrome = true,
+        tags = "@test123"
 )
 public class TestRunner3 extends AbstractTestNGCucumberTests {
 
@@ -25,8 +25,5 @@ public class TestRunner3 extends AbstractTestNGCucumberTests {
         return super.scenarios();
     }
     
-    @AfterSuite
-    public void generatePdfReport() {
-        PdfReportGenerator.generatePdf();
-    }
+    
 }
