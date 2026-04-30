@@ -43,7 +43,7 @@ pipeline {
                 <p>Build Number: ${env.BUILD_NUMBER}</p>
                 <p>Check attached Extent Report.</p>
                 """,
-                to: "padavath68@gmail.com",
+                to: "amarpadavath@gmail.com",
                 mimeType: 'text/html',
                 attachmentsPattern: 'test-output/ExtentReport.html'
             )
