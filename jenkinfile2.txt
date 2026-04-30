@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Build') {
+            steps {
+                echo "Build started..."
+                bat 'mvn clean install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Running Cucumber tests with @test123 tag..."
+
+                bat """
+                mvn test -Dcucumber.filter.tags="@test123"
+                """
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploy stage..."
+                bat 'echo Deployment completed'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo "Execution completed"
+        }
+    }
+}

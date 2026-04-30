@@ -1,6 +1,1 @@
-2026-04-10 09:30:45 INFO  factory.DriverFactory - Launching browser: firefox
-2026-04-10 15:56:16 INFO  factory.DriverFactory - Launching browser: chrome
-2026-04-10 16:01:39 INFO  factory.DriverFactory - Launching browser: chrome
-2026-04-10 16:01:39 INFO  factory.DriverFactory - Launching browser: chrome
-2026-04-10 16:02:52 INFO  factory.DriverFactory - Launching browser: chrome
-2026-04-10 16:02:52 INFO  factory.DriverFactory - Launching browser: chrome
+2026-04-30 08:15:42 INFO  factory.DriverFactory - Launching browser: chrome
