@@ -2,20 +2,57 @@ pipeline {
     agent any
 
     parameters {
-        choice(name: 'browser', choices: ['chrome', 'firefox', 'edge'], description: 'Select Browser')
-        string(name: 'tags', defaultValue: '@smoke', description: 'Cucumber Tags')
-        choice(name: 'suiteXmlFile', choices: ['testng.xml', 'testng-crossbrowser.xml'], description: 'Select TestNG Suite')
+        choice(
+            name: 'suiteXmlFile',
+            choices: ['testng.xml', 'testng-crossbrowser.xml'],
+            description: 'Select TestNG Suite'
+        )
+
+        choice(
+            name: 'browser',
+            choices: ['', 'chrome', 'firefox', 'edge'],
+            description: 'Optional: Select browser (leave empty for XML/default)'
+        )
+
+        string(
+            name: 'tags',
+            defaultValue: '',
+            description: 'Optional: Cucumber tags (e.g. @smoke or @regression)'
+        )
     }
 
     stages {
+
+        stage('Debug Inputs') {
+            steps {
+                echo "Suite: ${params.suiteXmlFile}"
+                echo "Browser: ${params.browser}"
+                echo "Tags: ${params.tags}"
+            }
+        }
+
         stage('Run Tests') {
             steps {
-                sh """
-                mvn clean test \
-                -DsuiteXmlFile=${params.suiteXmlFile} \
-                -Dbrowser=${params.browser} \
-                -Dtags='${params.tags}'
-                """
+                script {
+
+                    // 🔥 Build dynamic Maven command
+                    def cmd = "mvn clean test -DsuiteXmlFile=${params.suiteXmlFile}"
+
+                    // ✅ Add browser ONLY if provided
+                    if (params.browser?.trim()) {
+                        cmd += " -Dbrowser=${params.browser}"
+                    }
+
+                    // ✅ Add tags ONLY if provided
+                    if (params.tags?.trim()) {
+                        cmd += " -Dtags=\"${params.tags}\""
+                    }
+
+                    echo "Final Command: ${cmd}"
+
+                    // 🔥 Execute (Windows)
+                    bat cmd
+                }
             }
         }
     }
