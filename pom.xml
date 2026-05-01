@@ -127,6 +127,13 @@
     <suiteXmlFiles>
         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
     </suiteXmlFiles>
+    
+   
+    <systemPropertyVariables>
+        <browser>${browser}</browser>
+        <cucumber.filter.tags>${tags}</cucumber.filter.tags>
+    </systemPropertyVariables>
+
 </configuration>
 
         </plugin>
