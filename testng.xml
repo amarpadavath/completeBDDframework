@@ -1,0 +1,12 @@
+<suite name="Suite"
+       parallel="methods"
+       thread-count="2"
+       data-provider-thread-count="2">
+
+    <test name="CucumberTest">
+        <classes>
+            <class name="runner.TestRunner1testng"/>
+        </classes>
+    </test>
+
+</suite>
