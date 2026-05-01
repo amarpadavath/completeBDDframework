@@ -1,7 +1,6 @@
 stepdefinition\EventHubSteps.class
 exceptions\ElementNotFoundException.class
 pages\GreenKartPage.class
-runner\TestRunner1.class
 runner\TestRunner2grasshoperadapter.class
 utils\WaitUtil.class
 runner\TestRunner4MulBrowser.class

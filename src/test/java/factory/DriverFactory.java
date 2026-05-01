@@ -16,8 +16,14 @@ public class DriverFactory {
     public static void initDriver(String browser) {
 
         log.info("Launching browser: {}", browser);
+        
+        if (browser == null || browser.isEmpty()) {
+            browser = "chrome";
+        }
 
-        switch (browser.toLowerCase()) {
+        switch (browser.toLowerCase()) 
+        
+        {
 
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();

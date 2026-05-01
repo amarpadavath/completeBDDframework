@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 30 22:30:12 IST 2026</td>
+<td>Started on:</td><td>Fri May 01 11:40:00 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14954 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21017 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner4.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner4<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"</td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [95afd230a74e45a725430e70fec72cb8, clickElement {id=f.BD4CF13921343F061C2862C3C7AC7E63.d.E1E8D0A16060ECA5EDF6DB7C8B240CFD.e.93}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63969}, goog:processID: 34708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63969/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (95afd230a74e45a725430e70fec72cb8)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
-Session ID: 95afd230a74e45a725430e70fec72cb8
+Command: [73de280663a50ab05fbabeadeac874e2, clickElement {id=f.0FD15A2F93A1A6505EDF75E2215F0E0B.d.E57506E95C3ED2BE42462933A1791000.e.86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65310}, goog:processID: 24124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65310/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (73de280663a50ab05fbabeadeac874e2)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
+Session ID: 73de280663a50ab05fbabeadeac874e2
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,20 +101,20 @@ Session ID: 95afd230a74e45a725430e70fec72cb8
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
+	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:43)
 	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
 	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1579266951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1579266951'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+</pre></div><a href='#' onClick='toggleBox("stack-trace1579837841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1579837841'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [95afd230a74e45a725430e70fec72cb8, clickElement {id=f.BD4CF13921343F061C2862C3C7AC7E63.d.E1E8D0A16060ECA5EDF6DB7C8B240CFD.e.93}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63969}, goog:processID: 34708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63969/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (95afd230a74e45a725430e70fec72cb8)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
-Session ID: 95afd230a74e45a725430e70fec72cb8
+Command: [73de280663a50ab05fbabeadeac874e2, clickElement {id=f.0FD15A2F93A1A6505EDF75E2215F0E0B.d.E57506E95C3ED2BE42462933A1791000.e.86}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65310}, goog:processID: 24124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65310/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (73de280663a50ab05fbabeadeac874e2)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
+Session ID: 73de280663a50ab05fbabeadeac874e2
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -129,24 +129,24 @@ Session ID: 95afd230a74e45a725430e70fec72cb8
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
+	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:43)
 	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
 	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
 </pre></div></td>
-<td>10</td>
-<td>runner.TestRunner4@6200f9cb</td></tr>
+<td>4</td>
+<td>runner.TestRunner@41a2befb</td></tr>
 <tr>
-<td title='runner.TestRunner4.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner4<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"</td>
 <td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [66febd3574ed2f0d5d9f9272820457e1, clickElement {id=f.6FAD9E4E35A48BF7C2989A237F5B034A.d.02BD258D5F255038AFF7586A586B0D4F.e.96}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58139}, goog:processID: 8616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58139/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (66febd3574ed2f0d5d9f9272820457e1)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
-Session ID: 66febd3574ed2f0d5d9f9272820457e1
+Command: [34c31cfc9c38d8391204b04692a0f80e, clickElement {id=f.61BF351F6244885D3763F433106AEC4F.d.53F2117AF0F479D7AEEF8E8A6639A57A.e.94}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50247}, goog:processID: 11536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50247/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34c31cfc9c38d8391204b04692a0f80e)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
+Session ID: 34c31cfc9c38d8391204b04692a0f80e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -161,20 +161,20 @@ Session ID: 66febd3574ed2f0d5d9f9272820457e1
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
+	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:43)
 	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
 	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1235987127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1235987127'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+</pre></div><a href='#' onClick='toggleBox("stack-trace1481417616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1481417616'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
   (Session info: chrome=147.0.7727.117)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [66febd3574ed2f0d5d9f9272820457e1, clickElement {id=f.6FAD9E4E35A48BF7C2989A237F5B034A.d.02BD258D5F255038AFF7586A586B0D4F.e.96}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58139}, goog:processID: 8616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58139/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (66febd3574ed2f0d5d9f9272820457e1)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
-Session ID: 66febd3574ed2f0d5d9f9272820457e1
+Command: [34c31cfc9c38d8391204b04692a0f80e, clickElement {id=f.61BF351F6244885D3763F433106AEC4F.d.53F2117AF0F479D7AEEF8E8A6639A57A.e.94}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50247}, goog:processID: 11536, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50247/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (34c31cfc9c38d8391204b04692a0f80e)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
+Session ID: 34c31cfc9c38d8391204b04692a0f80e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -189,12 +189,12 @@ Session ID: 66febd3574ed2f0d5d9f9272820457e1
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
+	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:43)
 	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
 	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
 </pre></div></td>
-<td>10</td>
-<td>runner.TestRunner4@6200f9cb</td></tr>
+<td>6</td>
+<td>runner.TestRunner@41a2befb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -205,15 +205,10 @@ Session ID: 66febd3574ed2f0d5d9f9272820457e1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.TestRunner4.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner4<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"</td>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"</td>
 <td></td>
-<td>13</td>
-<td>runner.TestRunner4@6200f9cb</td></tr>
-<tr>
-<td title='runner.TestRunner4.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner4<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds Brocolli to cart and completes checkout", "Add product to cart and place order"</td>
-<td></td>
-<td>13</td>
-<td>runner.TestRunner4@6200f9cb</td></tr>
+<td>8</td>
+<td>runner.TestRunner@41a2befb</td></tr>
 </table><p>
 </body>
 </html>

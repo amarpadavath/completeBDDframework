@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 
-@Listeners(utils.RetryListener.class)
+
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepdefinition", "hooks"},
