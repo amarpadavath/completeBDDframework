@@ -26,3 +26,11 @@
 2026-05-01 10:21:56 INFO  factory.DriverFactory - Browser closed
 2026-05-01 10:21:56 INFO  factory.DriverFactory - Launching browser: chrome
 2026-05-01 10:22:06 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:33:20 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:34:36 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:34:37 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:34:52 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:34:52 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:35:07 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:35:07 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:35:24 INFO  factory.DriverFactory - Browser closed

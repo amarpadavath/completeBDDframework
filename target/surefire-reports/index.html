@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runner.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User adds Brocolli to cart and completes checkout&quot;, &quot;Add product to cart and place order&quot;)">runScenario("User adds Brocolli to cart and completes checkout", "Add product to cart and place order")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runner.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User adds Brocolli to cart and completes checkout scenario outline&quot;, &quot;Add product to cart and place...)">runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...)</a> <!-- method navigator-link -->
@@ -125,6 +120,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runner.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User adds Brocolli to cart and completes checkout&quot;, &quot;Add product to cart and place order&quot;)">runScenario("User adds Brocolli to cart and completes checkout", "Add product to cart and place order")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runner.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User adds Brocolli to cart and completes checkout scenario outline&quot;, &quot;Add product to cart and place...)">runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...)</a> <!-- method navigator-link -->
@@ -150,19 +150,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User adds Brocolli to cart and completes checkout&quot;, &quot;Add product to cart and place order&quot;)">
-                  </a> <!-- runScenario("User adds Brocolli to cart and completes checkout", "Add product to cart and place order") -->
+                  <a name="runScenario(&quot;User adds Brocolli to cart and completes checkout scenario outline&quot;, &quot;Add product to cart and place...)">
+                  </a> <!-- runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...) -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User adds Brocolli to cart and completes checkout","Add product to cart and place order")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select&quot;}
-  (Session info: chrome=147.0.7727.117)
+                  <span class="parameters">("User adds Brocolli to cart and completes checkout scenario outline","Add product to cart and place order")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: (//li//p[text()=&apos;Brocolli - 1 Kg&apos;])[1]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dbfa3c848fda0ff7a06736eb01f5a895, findElement {using=xpath, value=//select}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61167}, goog:processID: 26988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61167/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dbfa3c848fda0ff7a06736eb01f5a895
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c7825778-c4d9-413d-837b-97dcd43d133b, findElement {using=xpath, value=(//li//p[text()=&apos;Brocolli - 1 Kg&apos;])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25888, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: c7825778-c4d9-413d-837b-97dcd43d133b
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -174,9 +173,9 @@ Session ID: dbfa3c848fda0ff7a06736eb01f5a895
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at pages.GreenKartPage.placeOrder(GreenKartPage.java:66)
-	at stepdefinition.GreenKartSteps.user_places_the_order(GreenKartSteps.java:66)
-	at ✽.user places the order(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCart.feature:9)
+	at pages.GreenKartPage.getProductText(GreenKartPage.java:55)
+	at stepdefinition.GreenKartSteps.user_proceeds_to_checkout(GreenKartSteps.java:57)
+	at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:8)
 ... Removed 5 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -189,16 +188,14 @@ Session ID: dbfa3c848fda0ff7a06736eb01f5a895
                   </a> <!-- runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User adds Brocolli to cart and completes checkout scenario outline","Add product to cart and place order")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: (//li//p[text()=&apos;Brocolli - 1 Kg&apos;])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25745e932389d6a6a0673b8bd73f4e9f, clickElement {id=f.0D98EC6ADB7D8FE9950CA70EE5CCD3F0.d.3BD92E6F948F7480E8190C7AEAA82B3B.e.75}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59343}, goog:processID: 28524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59343/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (25745e932389d6a6a0673b8bd73f4e9f)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
-Session ID: 25745e932389d6a6a0673b8bd73f4e9f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bbdc7326-10db-4950-b362-0ba5c089826e, findElement {using=xpath, value=(//li//p[text()=&apos;Brocolli - 1 Kg&apos;])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25736, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: bbdc7326-10db-4950-b362-0ba5c089826e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -206,45 +203,13 @@ Session ID: 25745e932389d6a6a0673b8bd73f4e9f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
-	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
-	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
-... Removed 5 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;User adds Brocolli to cart and completes checkout scenario outline&quot;, &quot;Add product to cart and place...)">
-                  </a> <!-- runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...) -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User adds Brocolli to cart and completes checkout scenario outline","Add product to cart and place order")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15265c5dd3cdf39d9f00d08fe17a862c, clickElement {id=f.A7B632626D536E3FC4804629735BDBE5.d.5EE3B32113AB7ED93182DC8139A6A368.e.77}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53518}, goog:processID: 26380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53518/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (15265c5dd3cdf39d9f00d08fe17a862c)] -&gt; xpath: //input[@type=&apos;number&apos;]/following-sibling::*]
-Session ID: 15265c5dd3cdf39d9f00d08fe17a862c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
-	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
-	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.GreenKartPage.getProductText(GreenKartPage.java:55)
+	at stepdefinition.GreenKartSteps.user_proceeds_to_checkout(GreenKartSteps.java:57)
+	at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:8)
 ... Removed 5 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -259,6 +224,16 @@ Session ID: 15265c5dd3cdf39d9f00d08fe17a862c
               <span class="class-name">runner.TestRunner1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User adds Brocolli to cart and completes checkout&quot;, &quot;Add product to cart and place order&quot;)">
+                  </a> <!-- runScenario("User adds Brocolli to cart and completes checkout", "Add product to cart and place order") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User adds Brocolli to cart and completes checkout","Add product to cart and place order")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;User adds Brocolli to cart and completes checkout scenario outline&quot;, &quot;Add product to cart and place...)">
@@ -335,24 +310,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner1')
-data.setCell(0, 3, 21473);
+data.setCell(0, 3, 77950);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runner.TestRunner1')
-data.setCell(1, 3, 10009);
+data.setCell(1, 3, 17013);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runner.TestRunner1')
-data.setCell(2, 3, 7103);
+data.setCell(2, 3, 15400);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runner.TestRunner1')
-data.setCell(3, 3, 6544);
+data.setCell(3, 3, 15098);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -380,38 +355,36 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.TestRunner1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7d322cad)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@3bcd05cb)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("User adds Brocolli to cart and completes checkout", "Add product to cart and place order")</span>
-                <span class="method-start">2648 ms</span>
+                <span class="method-start">1884 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...)</span>
-                <span class="method-start">24136 ms</span>
+                <span class="method-start">79837 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...)</span>
-                <span class="method-start">30685 ms</span>
+                <span class="method-start">95249 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place...)</span>
-                <span class="method-start">37790 ms</span>
+                <span class="method-start">110349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">47805 ms</span>
+                <span class="method-start">127369 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">generatePdfReport</span>
-                <span class="method-start">48869 ms</span>
+                <span class="method-start">128357 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,18 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 51.28 s <<< FAILURE! -- in TestSuite
-runner.TestRunner1.runScenario["User adds Brocolli to cart and completes checkout", "Add product to cart and place order"](1) -- Time elapsed: 21.49 s <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 130.8 s <<< FAILURE! -- in TestSuite
+runner.TestRunner1.runScenario["User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"](2) -- Time elapsed: 15.41 s <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//select"}
-  (Session info: chrome=147.0.7727.117)
+Unable to locate element: (//li//p[text()='Brocolli - 1 Kg'])[1]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dbfa3c848fda0ff7a06736eb01f5a895, findElement {using=xpath, value=//select}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61167}, goog:processID: 26988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61167/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dbfa3c848fda0ff7a06736eb01f5a895
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [c7825778-c4d9-413d-837b-97dcd43d133b, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25888, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: c7825778-c4d9-413d-837b-97dcd43d133b
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -29,22 +28,20 @@ Session ID: dbfa3c848fda0ff7a06736eb01f5a895
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-	at pages.GreenKartPage.placeOrder(GreenKartPage.java:66)
-	at stepdefinition.GreenKartSteps.user_places_the_order(GreenKartSteps.java:66)
-	at ✽.user places the order(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCart.feature:9)
+	at pages.GreenKartPage.getProductText(GreenKartPage.java:55)
+	at stepdefinition.GreenKartSteps.user_proceeds_to_checkout(GreenKartSteps.java:57)
+	at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:8)
 
-runner.TestRunner1.runScenario["User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"](2) -- Time elapsed: 6.543 s <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: stale element not found in the current frame
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+runner.TestRunner1.runScenario["User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"](3) -- Time elapsed: 15.10 s <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: (//li//p[text()='Brocolli - 1 Kg'])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [25745e932389d6a6a0673b8bd73f4e9f, clickElement {id=f.0D98EC6ADB7D8FE9950CA70EE5CCD3F0.d.3BD92E6F948F7480E8190C7AEAA82B3B.e.75}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59343}, goog:processID: 28524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59343/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (25745e932389d6a6a0673b8bd73f4e9f)] -> xpath: //input[@type='number']/following-sibling::*]
-Session ID: 25745e932389d6a6a0673b8bd73f4e9f
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [bbdc7326-10db-4950-b362-0ba5c089826e, findElement {using=xpath, value=(//li//p[text()='Brocolli - 1 Kg'])[1]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 149.0.2, moz:accessibilityChecks: false, moz:buildID: 20260403140140, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25736, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: bbdc7326-10db-4950-b362-0ba5c089826e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -57,39 +54,11 @@ Session ID: 25745e932389d6a6a0673b8bd73f4e9f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
-	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
-	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
-
-runner.TestRunner1.runScenario["User adds Brocolli to cart and completes checkout scenario outline", "Add product to cart and place order"](3) -- Time elapsed: 7.105 s <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: stale element not found in the current frame
-  (Session info: chrome=147.0.7727.117)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15265c5dd3cdf39d9f00d08fe17a862c, clickElement {id=f.A7B632626D536E3FC4804629735BDBE5.d.5EE3B32113AB7ED93182DC8139A6A368.e.77}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.117, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53518}, goog:processID: 26380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53518/devtoo..., se:cdpVersion: 147.0.7727.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (15265c5dd3cdf39d9f00d08fe17a862c)] -> xpath: //input[@type='number']/following-sibling::*]
-Session ID: 15265c5dd3cdf39d9f00d08fe17a862c
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pages.GreenKartPage.increaseQuantity(GreenKartPage.java:42)
-	at stepdefinition.GreenKartSteps.user_increases_quantity(GreenKartSteps.java:45)
-	at ✽.user increases the quantity(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:6)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pages.GreenKartPage.getProductText(GreenKartPage.java:55)
+	at stepdefinition.GreenKartSteps.user_proceeds_to_checkout(GreenKartSteps.java:57)
+	at ✽.user proceeds to checkout(file:///F:/All%20eclipsewprk%20space/WorkSpaceDece2024/test/src/test/resources/features/AddToCartScenarioOutLine.feature:8)
 
