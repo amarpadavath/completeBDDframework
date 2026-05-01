@@ -16,8 +16,11 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
 	</properties>
+	
+	
     
     <dependencies>
+    
     
     <!-- Extent Report -->
 <dependency>
@@ -121,10 +124,10 @@
             <version>3.2.5</version>
 
             <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>testngmulbrowser.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
+    <suiteXmlFiles>
+        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+    </suiteXmlFiles>
+</configuration>
 
         </plugin>
     </plugins>

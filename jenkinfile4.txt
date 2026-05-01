@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(name: 'browser', choices: ['chrome', 'firefox', 'edge'], description: 'Select Browser')
+        string(name: 'tags', defaultValue: '@smoke', description: 'Cucumber Tags')
+        choice(name: 'suiteXmlFile', choices: ['testng.xml', 'testng-crossbrowser.xml'], description: 'Select TestNG Suite')
+    }
+
+    stages {
+        stage('Run Tests') {
+            steps {
+                sh """
+                mvn clean test \
+                -DsuiteXmlFile=${params.suiteXmlFile} \
+                -Dbrowser=${params.browser} \
+                -Dtags='${params.tags}'
+                """
+            }
+        }
+    }
+}

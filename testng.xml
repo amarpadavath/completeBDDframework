@@ -5,7 +5,7 @@
 
     <test name="CucumberTest">
         <classes>
-            <class name="runner.TestRunner4"/>
+            <class name="runner.TestRunner1"/>
         </classes>
     </test>
 
