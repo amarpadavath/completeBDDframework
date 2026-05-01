@@ -1,0 +1,76 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(
+            name: 'suiteXmlFile',
+            choices: ['testng.xml', 'testng-crossbrowser.xml', 'testngmulbrowser.xml'],
+            description: 'Select TestNG Suite'
+        )
+
+        choice(
+            name: 'browser',
+            choices: ['', 'chrome', 'firefox', 'edge'],
+            description: 'Optional: Select browser (leave empty for XML/default)'
+        )
+
+        string(
+            name: 'tags',
+            defaultValue: '',
+            description: 'Optional: Cucumber tags (e.g. @smoke or @regression)'
+        )
+    }
+
+    stages {
+
+        stage('Debug Inputs') {
+            steps {
+                echo "Suite: ${params.suiteXmlFile}"
+                echo "Browser: ${params.browser}"
+                echo "Tags: ${params.tags}"
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                script {
+
+                    def cmd = "mvn clean test -DsuiteXmlFile=${params.suiteXmlFile}"
+
+                    if (params.browser?.trim()) {
+                        cmd += " -Dbrowser=${params.browser}"
+                    }
+
+                    if (params.tags?.trim()) {
+                        cmd += " -Dtags=\"${params.tags}\""
+                    }
+
+                    echo "Final Command: ${cmd}"
+
+                    bat cmd
+                }
+            }
+        }
+
+        // 🔥 Optional debug to confirm report exists
+        stage('Verify Report') {
+            steps {
+                bat "dir target\\ExtentReport"
+            }
+        }
+    }
+
+    // ✅ ALWAYS publish report even if tests fail
+    post {
+        always {
+            publishHTML([
+                reportDir: 'target/ExtentReport',
+                reportFiles: 'ExtentSpark.html',
+                reportName: 'Extent Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
+        }
+    }
+}
