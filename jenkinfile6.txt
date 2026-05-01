@@ -1,0 +1,17 @@
+pipeline {
+    agent { label 'test-agent' }
+
+    stages {
+        stage('Build') {
+            steps {
+                bat 'mvn clean install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'mvn test -Dcucumber.filter.tags="@test123"'
+            }
+        }
+    }
+}
