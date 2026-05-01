@@ -4,7 +4,7 @@ pipeline {
     parameters {
         choice(
             name: 'suiteXmlFile',
-            choices: ['testng.xml', 'testng-crossbrowser.xml'],
+            choices: ['testng.xml', 'testng-crossbrowser.xml', 'testngmulbrowser.xml'],
             description: 'Select TestNG Suite'
         )
 
