@@ -15,8 +15,8 @@ import org.testng.annotations.DataProvider;
                 "html:target/cucumber-report.html",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-        monochrome = true
-       //tags = "@test123"
+        monochrome = true,
+       tags = "@test123"
 )
 public class TestRunner1 extends AbstractTestNGCucumberTests {
 
