@@ -20,24 +20,32 @@ public class HooksReports4 {
 
 	    String browser = null;
 
-	    try {
-	        // 🔥 Fetch from TestNG XML
-	        browser = Reporter.getCurrentTestResult()
-	                          .getTestContext()
-	                          .getCurrentXmlTest()
-	                          .getParameter("browser");
+	    // 🔥 1. FIRST → Maven / Jenkins
+	    browser = System.getProperty("browser");
+	    System.out.println("Browser from Maven: " + browser);
 
-	        System.out.println("Browser from XML: " + browser);
+	    // 🔥 2. SECOND → TestNG XML
+	    if (browser == null || browser.isEmpty()) {
+	        try {
+	            browser = Reporter.getCurrentTestResult()
+	                    .getTestContext()
+	                    .getCurrentXmlTest()
+	                    .getParameter("browser");
 
-	    } catch (Exception e) {
-	        System.out.println("Could not fetch browser from TestNG");
+	            System.out.println("Browser from XML: " + browser);
+
+	        } catch (Exception e) {
+	            System.out.println("Could not fetch browser from TestNG");
+	        }
 	    }
 
-	    // Fallback
+	    // 🔥 3. THIRD → config.properties
 	    if (browser == null || browser.isEmpty()) {
 	        browser = ConfigReader.getProperty("browser");
+	        System.out.println("Browser from config: " + browser);
 	    }
 
+	    // 🔥 4. DEFAULT
 	    if (browser == null || browser.isEmpty()) {
 	        browser = "chrome";
 	    }
