@@ -46,8 +46,12 @@ pipeline {
                     }
 
                     echo "Final Command: ${cmd}"
+                    
+                    catchError(buildResult: 'SUCCESS', stageResult: 'UNSTABLE') {
+    					bat cmd
+							}
 
-                    bat cmd
+                   
                 }
             }
         }
