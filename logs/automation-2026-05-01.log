@@ -1,0 +1,42 @@
+2026-05-01 10:01:19 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:01:19 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:01:19 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:01:19 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:01:33 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:01:33 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:01:51 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:01:51 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:01:52 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:02:05 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:02:07 INFO  factory.DriverFactory - Launching browser: edge
+2026-05-01 10:02:07 INFO  factory.DriverFactory - Launching browser: edge
+2026-05-01 10:02:09 INFO  factory.DriverFactory - Launching browser: edge
+2026-05-01 10:02:10 INFO  factory.DriverFactory - Launching browser: edge
+2026-05-01 10:02:15 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:02:15 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:02:18 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:02:18 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:02:32 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:02:35 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:21:22 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:21:42 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:21:42 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:21:49 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:21:49 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:21:56 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:21:56 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 10:22:06 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:33:20 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:34:36 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:34:37 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:34:52 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:34:52 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:35:07 INFO  factory.DriverFactory - Browser closed
+2026-05-01 10:35:07 INFO  factory.DriverFactory - Launching browser: firefox
+2026-05-01 10:35:24 INFO  factory.DriverFactory - Browser closed
+2026-05-01 11:40:03 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 11:40:08 INFO  factory.DriverFactory - Browser closed
+2026-05-01 11:40:08 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 11:40:13 INFO  factory.DriverFactory - Browser closed
+2026-05-01 11:40:13 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-01 11:40:21 INFO  factory.DriverFactory - Browser closed

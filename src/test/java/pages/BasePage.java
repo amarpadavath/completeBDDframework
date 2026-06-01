@@ -12,6 +12,9 @@ public class BasePage {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
+    
+   // WebDriverWait wait =
+     //       new WebDriverWait(driver, Duration.ofSeconds(10));
 
     public BasePage(WebDriver driver)
     {
@@ -33,6 +36,12 @@ public class BasePage {
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(locator))
                 .sendKeys(value);
+    }
+    
+    public void enterText(By locator1,By locator2,String value1,String value2)
+    {
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(locator1)).sendKeys(value1);
+    	wait.until(ExpectedConditions.visibilityOfElementLocated(locator2)).sendKeys(value2);
     }
 
     // Get text

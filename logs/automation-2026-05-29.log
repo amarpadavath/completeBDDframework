@@ -1,0 +1,10 @@
+2026-05-29 07:29:17 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-29 07:29:27 INFO  factory.DriverFactory - Browser closed
+2026-05-29 07:30:10 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-29 07:30:13 INFO  factory.DriverFactory - Browser closed
+2026-05-29 08:14:21 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-29 08:14:25 INFO  factory.DriverFactory - Browser closed
+2026-05-29 08:20:12 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-29 08:20:16 INFO  factory.DriverFactory - Browser closed
+2026-05-29 08:24:43 INFO  factory.DriverFactory - Launching browser: chrome
+2026-05-29 08:24:49 INFO  factory.DriverFactory - Browser closed
